@@ -5,4 +5,12 @@
 let element = document.createElement('div');
 document.body.appneChild(element);
 
-let 
+let ul = document.createElement('ul');
+
+for (let i = 0; i < 3; i++) {
+  li = document.createElement('li');
+  li.innerHTML = (i + 1).toString();
+  ul.appneChild(li);
+}
+
+element.appneChild(ul);
